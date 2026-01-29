@@ -1,15 +1,22 @@
-# 🔧 Components List
+# ⚙️ Working of Vehicle Emergency Car Assist System
 
-| S.No | Component Name                  | Quantity |
-|-----:|--------------------------------|---------:|
-| 1    | Arduino Uno / Nano              | 1 |
-| 2    | Eye Blink Sensor                | 1 |
-| 3    | Ultrasonic Sensor (HC-SR04)     | 1 |
-| 4    | Servo Motor                     | 1 |
-| 5    | Relay Module                    | 1 |
-| 6    | GSM Module (SIM800 / SIM900)    | 1 |
-| 7    | LED (Indicator)                 | 1 |
-| 8    | Buzzer                          | 1 |
-| 9    | Resistors                       | As required |
-| 10   | Jumper Wires                    | As required |
-| 11   | Power Supply                    | 1 |
+## Normal Condition
+- The system continuously monitors the driver’s eye status using an eye blink sensor.
+- Ultrasonic sensor measures the distance from obstacles or roadside.
+- Vehicle operates normally when eyes are open.
+
+## Emergency Condition (Eyes Not Open)
+1. Eye blink sensor detects eyes closed.
+2. Left indicator LED turns ON to warn nearby vehicles.
+3. Servo motor automatically steers the vehicle toward the left side.
+4. Ultrasonic sensor ensures safe movement to the roadside.
+5. Once roadside is reached:
+   - Motor is stopped using relay
+6. GSM module sends an emergency SMS alert to a registered phone number.
+
+## Safety Reset
+- System resets all outputs (motor, indicators, buzzer).
+- Servo returns to neutral position.
+- Vehicle remains in safe state.
+
+This logic ensures accident prevention and timely emergency notification.
