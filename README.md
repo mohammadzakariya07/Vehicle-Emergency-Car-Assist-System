@@ -1,63 +1,62 @@
-# Automated Vehicle Control System using Arduino
+# 🚗 Vehicle Emergency Car Assist System
 
 ## 📌 Introduction
-This project is an automated vehicle control and safety system developed using Arduino.  
-It monitors the surroundings and driver input to take intelligent actions such as steering adjustment, warning alerts, and motor control.
+The Vehicle Emergency Car Assist System is an Arduino-based automated vehicle safety and driver-assistance project. It is designed to prevent accidents caused by driver drowsiness or loss of control by automatically taking corrective actions during emergency situations.
 
-The system uses an eye blink sensor for user input, an ultrasonic sensor for obstacle detection, and multiple actuators including a servo motor, relay, buzzer, and LEDs to enhance vehicle safety.
+The system uses an eye blink sensor to monitor the driver’s eye condition and an ultrasonic sensor to detect the vehicle’s position relative to the road. When an emergency is detected, the system safely moves the vehicle to the roadside, stops it, and sends an alert message to a registered mobile number.
 
 ---
 
 ## ⚙️ Features
-- Eye blink–based system activation
-- Real-time obstacle detection using ultrasonic sensor
-- Automatic steering control using servo motor
-- Visual alerts using LEDs
-- Audible warning using buzzer
-- Relay-based motor/load control
-- Safety reset on emergency conditions
+- Driver drowsiness detection using eye blink sensor
+- Automatic left-side indicator activation
+- Sensor-based steering toward roadside
+- Automatic motor stop using relay
+- Emergency SMS alert to registered phone number
+- Real-time safety monitoring and control
+- Automatic system reset for safety
 
 ---
 
-## 🧠 Working Principle
-1. System starts in a neutral and safe state.
-2. Ultrasonic sensor continuously monitors obstacle distance.
-3. Servo motor adjusts steering based on obstacle position.
-4. Eye blink sensor triggers the automated sequence.
-5. LEDs blink and buzzer sounds as warning indicators.
-6. Relay toggles to control motor or electrical load.
-7. If eye sensor becomes LOW, the system resets immediately.
+## 🧠 Working Overview
+- The system continuously monitors the driver’s eye status.
+- If eyes are open, the vehicle operates normally.
+- If eyes are not open:
+  - Left indicator turns ON
+  - Vehicle steers toward the left using servo motor
+  - Ultrasonic sensor ensures safe roadside movement
+  - Motor is stopped after reaching roadside
+  - Emergency message is sent to a registered phone number
+- The system resets to a safe state after emergency handling.
 
 ---
 
 ## 🔧 Hardware Components
-- Arduino Uno / Nano
-- Eye Blink Sensor
-- Ultrasonic Sensor (HC-SR04)
-- Servo Motor
-- Relay Module
-- Buzzer
-- LEDs
-- Resistors
-- Connecting Wires
-- Power Supply
+- Arduino Uno / Nano  
+- Eye Blink Sensor  
+- Ultrasonic Sensor (HC-SR04)  
+- Servo Motor (Steering Control)  
+- Relay Module (Motor Control)  
+- GSM Module (SIM800 / SIM900)  
+- LEDs (Indicators)  
+- Buzzer  
+- Power Supply  
+- Jumper Wires  
 
 ---
 
 ## 🛠 Applications
-- Autonomous vehicle prototypes
-- Driver safety and alert systems
-- Collision avoidance systems
-- Smart transportation
-- Automated industrial vehicles
+- Driver drowsiness detection systems
+- Emergency vehicle assist systems
+- Autonomous and semi-autonomous vehicles
+- Smart transportation systems
+- Industrial and campus transport vehicles
 
 ---
-
-
 
 ## 👨‍💻 Author
 **Mohammad Zakariya**  
-B.Tech (ECE) | Embedded Systems & Arduino Projects
+B.Tech – Electronics & Communication Engineering  
+Embedded Systems | Arduino | Vehicle Automation
 
 ---
-
